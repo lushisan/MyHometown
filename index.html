@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的家乡</title>
+		
+		<!--图片弹窗-->
+		<link href="css/tupian.css" rel="stylesheet">
+		<style>
+			*{margin:0;padding:0;}
+			body{width:100%;height:auto;margin:o auto;}
+			
+			.header{width:100%;height:700px;
+					background-image:url("images/banner001.jpeg");
+					background-repeat:no-repeat;
+					background-size:cover;
+					background-position:0 0;}
+			.biao{width:800px;height:200px;border-style: solid;border-width: 5px;
+						border-color: transparent;
+						margin-top: 50px;}
+			  
+			/*标题字体效果*/
+			.text{
+			      position: absolute;
+			      left:12%;
+			      margin-left: -150px;
+			      background-image: -webkit-linear-gradient(left,blue,#66ffff 10%,#cc00ff 20%,#CC00CC 30%,
+				   #CCCCFF 40%, #00FFFF 50%,#CCCCFF 						
+				   60%,#CC00CC 70%,#CC00FF 80%,#66FFFF 90%,blue 100%);
+			      -webkit-text-fill-color: transparent;/* 将字体设置成透明色 */
+			      -webkit-background-clip: text;/* 裁剪背景图，使文字作为裁剪区域向外裁剪 */
+			      -webkit-background-size: 200% 100%; 
+			      -webkit-animation: masked-animation 4s linear infinite;
+			      font-size: 35px;
+				 }
+			  @keyframes masked-animation {
+			      0% {
+			          background-position: 0  0;
+			      }
+			      100% {
+			          background-position: -100%  0;
+			      }
+			  }
+			
+					
+			#head{
+				background:#55aa7f; width:100%;height:30px;float:left;}
+			#head>ul{ 
+				width:1200px;height:30px;margin-top:0px;
+			    margin-left:auto;padding-left:50px; background:#55aa7f;float:left;}
+			#head>ul>li{
+				width:134px;height:30px;line-height:30px;float:left;
+			    font-weight:bold;padding-left:60px;border-radius:3px;border:1px solid #ffaaff;
+			    border-left: none;list-style:none;color:red;}
+			#head>button{
+			    width:50px;height:30px;text-align:center;line-height:20px;
+			    float:right;background:#aaaaff;color:red;}
+			#head>ul>li:hover{
+			    background:#2932e1;
+			    color:#fff;
+			    }
+			
+			.nav{width:100%;height:100px;background-color:skyblue;}
+			.nav ul{padding:0;margin:0;list-style-type:none;}
+			.nav ul li{float:left;line-height:100px;fon size="7";}
+			.nav ul li a{text-align:center;text-decoration:none;
+						display:block;width:350px;color:red;}
+			
+			.back{width:100%;height:auto;
+					background-image:url('images/007.jfif');
+					background-repeat:no-repeat;
+					background-position:80% 3%;}	
+			.main{width:800px;height:auto;text-indent:0px;
+						padding:30px 30px;margin:0px 20px;}
+			.main p{text-indent:50px;text-align:justify;margin:10px 80px;}
+			
+			
+			.tu{width:1400px;height:840px;margin:20px 5px;border:1px solid white;}
+			.tu div{width:344px;height:200px;border:solid 1px white;float:left;}
+			.tu div img{display:block;width:344px;height:200px;}
+			
+			.top{width:100%;height:100px;}
+			.top ul{width:130px;height:50px;margin-left:50%;background-color:#FFAAFF;}
+			.top ul p{width:130px;height:30px;padding-top:15px;text-decoration:none;color:#0000FF;}
+			
+			
+			.footer{width:100%;height:180px;background-color:lightblue;}
+			.footer p{padding-top:50px;;text-align:center;}
+
+		</style>
+		
+		
+		
+	</head>
+	<body>
+		<!--顶部背景-->
+		<div class="header">
+			
+			<div id="head">
+			      <ul>
+			        <li><a name="top">主页</a></li>
+			        <li>乡俗</li>
+			        <li>景点</li>
+			        <li>路线</li>
+			        <li>特色文化</li>
+			        <li>
+			            <a>联系方式</a>
+			        </li> 
+			      </ul>
+			      <button type="button" class="login"><a href="denglu.html">登陆</a></button>
+			      <button type="button" class="regist"><a href="denglu.html">注册</a></button>
+				  
+				<div class="biao" style="color:blue;">
+				    <h2 class='text'>欢迎来到我的故乡：凉都-六盘水</h2>
+				    
+				    <table border="1" style="margin-top:65px;margin-left:50px;">
+				      <tr>
+				        <th>姓名</th>
+				  		<td>卢本伟</td>
+				      </tr>
+				      <tr>
+				        <th>专业</th>
+				  		<td>软件工程</td>
+				      </tr>
+				      <tr>
+				        <th>学位</th>
+				  		<td>本科</td>
+				      </tr>
+				      <tr>
+				        <th>学校</th>
+				  		<td>XX大学</td>
+				      </tr>
+				      <tr>
+				        <th>入学年份</th>
+				  		<td>2019</td>
+				      </tr>
+					</table>
+				    </div>
+			</div>
+			
+		</div>
+		<!--导航-->
+		<div class="nav">
+			<ul>
+				<li><a href="#jianjie">故乡简介</a></li>
+				<li><a href="#wenhua">民族文化</a></li>
+				<li><a href="#fengjing">故乡风景</a></li>
+				<li><a href="#techan">家乡特产</a></li>
+			</ul>
+		</div>
+		<!--内容-->
+		<div class="back">
+		<div class="main">
+			<h2><a name="jianjie" style="text-decoration: none;">故乡简介：</a></h2>
+					<p>
+						[1]六盘水，别名中国凉都，是贵州省下辖市。位于贵州西部乌蒙山区，被中国气象学会授予“中国凉都”称号，
+					是全国唯一以气候特征命名的城市。
+					</p>
+					<p>
+						[2]六盘水地处滇、黔两省结合部，长江、珠江上游分水岭，南盘江、
+					北盘江流域两岸，矿产资源十分丰富。交通四通八达，是西南重要的铁路枢纽城市和物流集散中心之一。
+						是国家西电东送的主要城市，西南乃至华南地区重要的能源原材料工业基地，煤炭、电力、富硒茶、生物制药构成了市内的重要经济发展。
+					</p>
+					<p>
+						[3]2018年，入选“全国青少年校园足球改革试验区”。
+					</p>
+					<div style="margin-left:80px;"><img src='images/liupan.jfif'style="width:640px;"></div>
+					
+			<h2><a name="wenhua" style="text-decoration: none;">民族文化：</a></h2>
+				<p>
+					[1]六盘水少数民族人口众多，这里聚居着彝、苗、布依、回、仡佬等30多个少数民族。
+				</p>
+				<p>
+					[2]更为可贵的是这里至今仍保存着灿烂多姿的民族民间文化。这里的“南开苗族跳花节”、“玉合和普古彝族火把节”非常热闹有趣。
+				</p>
+				<p>
+					[3]盘县鸡场坪看傩舞。傩跳神，以驱邪纳祥为内容，由信神者请舞，踩坛设在堂屋神龛前，跑坛设在屋冠和面具，
+					身着法衣，手执扇鼓（俗称舞步有沉感，队形多变，鼓声宏亮，节参舞者配合默契，动作潇洒，
+					起伏有致但舞步多源于生活，如“羚羊戏打”、穿梭”、“黄莺晒翅”、“黄龙摆尾”刀山”等数十种。
+				</p>
+				<div style="margin-left:80px;">
+				<video width="640" height="280" controls>
+				      <source src="images/liupanshui.mp4" type="video/mp4">
+				      <source src="movie.ogg" type="video/ogg">
+				    </video>
+				</div>
+				<div style="margin-left:80px;"><img src='images/004.jfif'style="width:640px"></div>
+				
+			<h2><a name="fengjing" style="text-decoration: none;">故乡风景：</a></h2>
+			<div class="tu">
+					<div><img id="myImg" src='images/liupanshui.jfif' alt="beautiful"></div>
+					<div><img id="myImg" src='images/011.jpg' alt="beautiful2"></div>
+					<div><img id="myImg" src='images/008.jfif';></div>
+					<div><img id="myImg" src='images/012.jpg';></div>
+					<div><img id="myImg" src='images/015.jpg';></div>
+					<div><img id="myImg" src='images/002.jfif';></div>
+					<div><img id="myImg" src='images/101.jfif';></div>
+					<div><img id="myImg" src='images/013.jpg';></div>
+					<div><img id="myImg" src='images/014.jpg';></div>
+					<div><img id="myImg" src='images/016.jpg';></div>
+					<div><img id="myImg" src='images/017.jpg';></div>
+					<div><img id="myImg" src='images/018.jpg';></div>
+					<div><img id="myImg" src='images/020.jpg';></div>
+					<div><img id="myImg" src='images/021.jpg';></div>
+					<div><img id="myImg" src='images/022.jfif';></div>
+					<div><img id="myImg" src='images/022.jpg';></div>
+					
+					
+			</div>
+			<h2><a name="techan" style="text-decoration: none;">家乡特产：</a></h2>
+				<h3 style="margin:10px 0px;">盘县刺梨果脯</h3>
+				<p>盘县刺梨果脯具有脯体饱满，大小匀称，质地软硬适度，果肉柔软滋润，色泽鲜艳，透明鲜亮，
+				   易于保存，味道酸甜适口，柔软化渣，无异味的质量特点。盘县刺梨果脯是贵州知名特色产品。</p>
+				<p>盘县盛产的优质刺梨为原料，依托盘县高原山地独特的地理自然环境和浓厚的文化底蕴，
+				   通过清洗、去刺、切块、去籽、预煮、冷却、浸糖、煮糖、冷却、烘干等多道工艺制作而成。</p>
+				<div style="margin-left:80px;"><img src='images/ciguo.png'/></div>
+				
+				<h3 style="margin:10px 0px;">水城红心猕猴桃</h3>
+				<p>水城红心猕猴桃，是贵州省六盘水市水城县特产。</p>
+				<p>	红心猕猴桃果肉细嫩、香气浓郁、口感香甜清爽、酸度极低，特别是微量
+					元素中的含钙量为果中之首，果实中的钙可直接被人体吸收，
+					是中老年人良好的补钙剂，营养价值属果中之冠。</p>
+				<p>有“神奇美味果之称”、“果中之王”、“维C之王”等美称。</p>
+				<div style="margin-left:80px;"><img src='images/nihoutao.png'/></div>
+				
+				<h3 style="margin:10px 0px;">六盘水马铃薯</h3>
+				<p>六盘水马铃薯，是贵州省六盘水市特产，六盘水气候独特，非常适应马铃薯的生长，
+					六盘水是贵州省马铃薯第二大产区，被誉为马铃薯“天然留种基地”。</p>
+				<div style="margin-left:80px;"><img src='images/tudou.png'/></div>
+				
+			</div>
+			<!--锚点回到顶部-->
+			<div class="top">
+				<ul>
+					<p><a href="#top" style="text-decoration:none;">点击回到顶部主页</a></p>
+				</ul>
+			</div>
+		</div>
+		<div class="footer">
+			<p>
+				我的故乡静态网页制作@卢仕散_20190148037_软件工程
+			</p>
+		</div>
+	</body>
+</html>

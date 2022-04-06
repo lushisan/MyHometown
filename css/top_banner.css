@@ -1,0 +1,88 @@
+* {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+h1{text-align:center}
+		.window,
+		.window2 {
+			width: 500px;
+			height: 300px;
+			overflow: hidden;
+			position: relative;
+			text-align: center;
+			margin: 0 auto;
+		}
+
+		.window>.pic {
+			width: 1520px;
+			position: absolute;
+		}
+
+		.window>.pic>li {
+			float: left;
+		}
+
+		.pic img {
+			width: 500px;
+			height: 300px;
+		}
+
+		.btn {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			position: absolute;
+			display: inline-block;
+			background-color: rgba(0, 0, 0, 0.5);
+			text-decoration: none;
+			text-align: center;
+			line-height: 40px;
+			color: white;
+			font-family: '微软雅黑';
+			font-size: 20px;
+			margin-top: 140px;
+			top: -20px;
+			cursor: pointer;
+		}
+
+		.btn-prev {
+			left: 10px;
+		}
+
+		.btn-next {
+			right: 10px;
+		}
+
+		.indexCt {
+			display: inline-block;
+		}
+
+		.pageIndex {
+			position: relative;
+			top: 240px;
+		}
+
+		.pageIndex>li {
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background-color: white;
+			float: left;
+			margin: 0 6px;
+			cursor: pointer;
+		}
+
+		.pageIndex>.active {
+			background-color: gray;
+		}
+		/*渐变轮播*/
+
+		.window2>.pic {
+			position: absolute;
+		}
+
+		.window2>.pic>li {
+			position: absolute;
+			opacity: 0;
+		}
